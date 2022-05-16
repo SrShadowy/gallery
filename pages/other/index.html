@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main_style.css">   
+    <link rel="stylesheet" href="../../css/mods.css"> 
+    <script src="../../script/main.js"></script>
+    <title>GAME NAME</title>
+</head>
+<body>
+    
+    <img id="backgroundGame" src="./rc/background.gif" alt="GameBackground" style="z-index: -1; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 10%; width: 100%; height: 100%; ">
+
+    <div class="MOD">
+        <h1 style="text-align: center ;">GAME NAME</h1>
+        <h2>Game version: PLATAFORM</h2>
+        <h2>GAME BUILD VERSION</h2>
+        
+        <div style="position:fixed;">
+            <img id="photoMOD" src="rc\trainer.png" alt="trainer" draggable="false"> 
+
+
+            <div class="FunctionExplain" style="left: 5px; top:120px; background-color: black; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>SET ME POS</h3>
+                    <span>DESCRIPTION</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <button class="BTN" id="SUPPORTME" > SUPPORT-ME HERE </button>
+        <button class="BTN" id="DOWNLOAD" > DONWLOAD HERE </button>
+        <button class="BTN" id="REQUEST" > REQUEST HERE </button>
+    </div>
+
+
+
+</body>
+
+<footer>
+
+    <script>
+            trainer_img = document.getElementById('photoMOD');
+            trainer_img.addEventListener("click", function(e){
+                console.log(e.offsetX + "  " + e.offsetY );
+            });
+
+    </script>
+
+
+
+</footer>
+</html>

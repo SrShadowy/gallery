@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/main_style.css">
+    <title>How REQUEST A GAME</title>
+   
+</head>
+<body style="background-repeat: no-repeat; background-size:cover;">
+
+    <div style="z-index: 0; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 70%; width: 100%; height: 100%;">
+        <img id="backgroundGame" src="" alt="GameBackground" style="display: none ;">
+    </div>
+    <script>
+        const wp = ["wallpaper(1).jpg","wallpaper(1).png", "wallpaper(2).jpg", "wallpaper(2).png","wallpaper(3).jpg", "wallpaper(4).jpg",
+         "wallpaper(5).jpg", "wallpaper(6).jpg", "wallpaper(7).jpg", "wallpaper(8).jpg", "wallpaper(9).jpg", "wallpaper(10).jpg",
+        "wallpaper(11).jpg", "wallpaper(12).jpg","wallpaper(13).jpg", "wallpaper(14).jpg",'wallpaper(15).jpg' ] 
+        let random_value = 1 + Math.floor(Math.random() * 16);
+        console.log("wallpaper(" + random_value + ")")
+        document.body.style.backgroundImage = "url('../rc/background/" + wp[random_value] + "";
+    </script>
+
+<div class="Home">
+    <h3>Shadowy galery mod</h3>
+    <div id="links">
+        <a href="../"> HOME </a>
+        <!--<a href="#"> LIST </a> -->
+        <a href="../about.html"> ABOUT </a>
+    </div>
+</div>
+
+<style>
+    p{
+        padding: 3% 5% 3% 5%; 
+        font-size: 130% ;
+        margin: 20px;
+        text-align: justify;
+    }
+
+    .Page h1{
+        padding-top: 2%;
+    }
+
+
+    .Page a{
+        color: aqua;
+        user-select: none;
+        cursor: pointer;
+    }
+
+
+    .Page .TXT{
+        padding: 2%;
+        background-color: rgba(0, 0, 0, 0.493);
+    }
+
+    .Page h2{
+        padding: 1%;
+    }
+
+
+</style>
+
+<div class="Page" style="position: relative; text-align: center;">
+    <h1>How REQUEST A GAME</h1>
+
+    <div class="TXT" id = "Basic">
+        <h2>Basic info.</h2> 
+        <p>Following the <a>rules of each game</a> is important before anything else.
+        <br>
+        And of course common sense, it's a free non-profit work, sometimes it can take a while, so don't request it multiple times.</p>
+        <img src="rc/Bayonetta-Anim.gif" alt="lets go boy">
+    </div>
+    <br>
+    <div class="TXT" id = "Mandatory">
+        <h2>Mandatory</h2> 
+        <p>
+            It is necessary to say the name of the game (Not abbreviated, without links, full name) Ex: Metal Slug X.<br><br>
+            You have to say the platform: Steam, GOG, Epic, ETC. 
+        </p>
+
+        <img src="rc/LETSFUN-DMC5.gif" alt="Done? lets fun">
+    </div>
+    <br>
+    <div class="TXT" id = "Optional">
+        <h2>Optional</h2> 
+
+        <p>
+            Desired functions Ex: "Inf Money", "Skip timer of exit mission".<br><br>
+            Similar design desired.<Br><br>
+            Executable or DLL or Framework.<br><br>
+            Hotkeys (shortcut keys) ex: Shift + F1 = Active Infinity Jump.<br><br>
+        </p>
+        <img src="rc/CosplayBayonetta.gif" alt="Undestend">
+
+
+    </div>
+    <br><br>
+    <div class="TXT" id = "Idea">
+     
+        <div>
+         
+            <h2 >  Easy no?  But no Idea? See this exemple  </h2>
+
+            <label>Title:</label>
+            <h3>REQUEST: Bayonetta</h3>
+            <p style="text-align:center ;">
+                Text:<br>
+                Game name: Bayonetta.<br>
+                Plataform: Steam.<br>
+                if you can make this functions<br>
+                Infinity Jump<br>
+                God Mode<br>
+                thats all.<br>
+
+                Thanks for you work
+            </p>    
+
+
+
+        </div>
+
+        <img src="rc/Metal Slug.gif" alt="Thats is all">
+
+    </div>
+    <br>
+    <div class="TXT"  id = "Send">
+
+        <div>
+
+        <h2>How send</h2>
+        <p style="text-align:center ;">if you have github account you request by ISSUE <a href="https://github.com/SrShadowy/legendary-enigma/issues/new">Link here</a></p>
+
+        <h2>if not</h2>
+        <a href="../request.html">click here</a>
+        </div><br>
+
+        <img src="rc/DANTE-DMC5.gif" alt="How send">
+    </div>
+
+
+
+</div>
+
+
+<style>
+    #btn_scrolls{
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        padding: 15px;
+        border-radius: 4px;
+    }
+    #btn_scrolls #btn_down{
+        font-size: 18px;
+        float: left;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        margin: 1px;
+    }
+
+    #btn_scrolls #btn_up{
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        margin: 1px;
+    }
+
+    #btn_scrolls .Menu_{
+        padding: 5%;
+        
+        width: 200px;
+        align-items: center;
+        
+        height: auto;
+        background-color: brown;
+    }
+
+    #btn_scrolls .Menu_ .Visible_menu{
+  
+        display: none;
+       
+
+    }
+
+    #btn_scrolls .Menu_:hover .Visible_menu{
+        display: block;
+        
+    }
+
+    #btn_scrolls .Menu_ .Visible_menu a{
+        text-decoration: none;
+        text-align: center;
+        position: absolute;
+        width: 85%;
+
+    }
+
+    #btn_scrolls .Menu_ .Visible_menu a:hover{
+        background-color: rgb(60, 0, 78);
+    }
+
+
+</style>
+
+<div id="btn_scrolls">
+
+    <div class = "Menu_">
+        <span>INDEX SITE</span>
+        <div class="Visible_menu">
+            <a href="#Basic">Basic info</a><br>
+            <a href="#Mandatory">Mandatory</a><br>
+            <a href="#Optional">Optional</a><br>
+            <a href="#Idea">Easy no?</a><br>
+            <a href="#Send">How send</a><br>
+        </div>
+
+    </div>
+
+
+
+    <button id="btn_down" onclick="btn_down()">DOWN</button>
+    <button id="btn_up" onclick="btn_up()">UP</button>
+</div>
+
+
+</body>
+<footer>
+    <script src="../script/main.js"></script>
+
+    <script>
+        let scrollMaxY  = 0;
+        let scrollMinY  = 0;
+
+
+        window.addEventListener("scroll", function(e){
+            document.getElementById("btn_up").style.display    = checkVisible(document.getElementById("Basic")) ? "none" : "block";
+            document.getElementById("btn_down").style.display  =  checkVisible(document.getElementById("Send")) ? "none" : "block";
+        });
+
+
+        function btn_down(){
+            scrollMaxY = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, 
+            document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+            window.scroll(0,scrollMaxY);
+        }
+
+        function btn_up(){
+            window.scroll(0,scrollMinY);
+        }
+        
+
+    </script>
+
+</footer>
+</html>

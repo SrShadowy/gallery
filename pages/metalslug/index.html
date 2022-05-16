@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main_style.css">   
+    <link rel="stylesheet" href="../../css/mods.css"> 
+    <script src="../../script/main.js"></script>
+    <title>METAL SLUG</title>
+</head>
+<body>
+    
+    <img id="backgroundGame" src="./rc/background.gif" alt="GameBackground" style="z-index: -1; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 10%; width: 100%; height: 100%; ">
+
+    <div class="MOD">
+        <h1 style="text-align: center ;">METAL SLUG</h1>
+        <h2>Game version: GOG</h2>
+        <h2>-----------------</h2>
+        
+        <div style="position:fixed;">
+            <img id="photoMOD" src="rc\trainer.png" alt="trainer" draggable="false"> 
+
+
+            <div class="FunctionExplain" style="left: 5px; top:120px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Inf Bombs</h3>
+                    <span>Keep the amount of bombs needed</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 5px; top:140px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Inf ammo</h3>
+                    <span>Ammo that will never let you down</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 5px; top:170px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>God Mode</h3>
+                    <span>Become invulnerable to damage</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 5px; top:190px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>No continue </h3>
+                    <span>No shameful countdown screen to continue</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 5px; top:212px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none; width: 250px;">
+                    <h3>Indestructible MS</h3>
+                    <span>Makes Metal Slug invulnerable to damage</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 126px; top:60px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Choose your weapon</h3>
+                    <span>Choose a weapon to play for any weapon on game</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 170px; top:140px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Set saved!</h3>
+                    <span>Enter the amount of prisoners saved</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 170px; top:180px; "  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>metal slug gas</h3>
+                    <span>Fill the metal slug tank</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class = "BTN_BOTTOM">
+        <button class="BTN" id="SUPPORTME" > SUPPORT-ME HERE </button>
+        <button class="BTN" id="DOWNLOAD" > DONWLOAD HERE </button>
+        <button class="BTN" id="REQUEST" > REQUEST HERE </button>
+    </div>
+
+</body>
+
+<footer>
+
+    <script>
+            trainer_img = document.getElementById('photoMOD');
+            trainer_img.addEventListener("click", function(e){
+                console.log(e.offsetX + "  " + e.offsetY );
+            });
+
+    </script>
+
+
+
+</footer>
+</html>

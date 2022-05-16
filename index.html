@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_style.css">
+    <title>Main Menu</title>
+   
+</head>
+<body style="background-repeat: no-repeat; background-size:cover;">
+
+    <div style="z-index: 0; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 70%; width: 100%; height: 100%;">
+        <img id="backgroundGame" src="" alt="GameBackground" style="display: none ;">
+    </div>
+    <script>
+        const wp = ["wallpaper(1).jpg","wallpaper(1).png", "wallpaper(2).jpg", "wallpaper(2).png","wallpaper(3).jpg", "wallpaper(4).jpg",
+         "wallpaper(5).jpg", "wallpaper(6).jpg", "wallpaper(7).jpg", "wallpaper(8).jpg", "wallpaper(9).jpg", "wallpaper(10).jpg",
+        "wallpaper(11).jpg", "wallpaper(12).jpg","wallpaper(13).jpg", "wallpaper(14).jpg",'wallpaper(15).jpg' ] 
+        let random_value = 1 + Math.floor(Math.random() * 16);
+        console.log("wallpaper(" + random_value + ")")
+        document.body.style.backgroundImage = "url('rc/background/" + wp[random_value] + "";
+    </script>
+
+  
+
+    <div class="Home">
+        <h3>Shadowy galery mod</h3>
+
+        <div id="links">
+            <a href="#"> HOME </a>
+  
+            <a href="about.html"> ABOUT </a>
+
+            <a href="https://github.com/SrShadowy/Simple-Scanner/issues"> REQUEST </a>
+        </div>
+    </div>
+
+    <div class="Page" >
+        <div class="Box" id="bayonetta"  onclick="Open_Frame('bayonetta')">
+            <div class="Main" >
+                <img src="rc/Bayonetta.png" alt="Greate icon hãn" id="ICON"> 
+                <h2>Bayonetta</h2>
+            </div>
+
+            <div class="INFO">
+                <h3>Bayonetta</h3>
+                <span>TRAINER - Worry about being stylish, that's all, and the rest is left to the trainer to take care of</span>
+                <img src="rc/Bayonetta.gif" alt="background" id="Background" draggable="false">
+            </div>
+
+
+        </div>
+        
+        <div class="Box" id="metalslug" onclick="Open_Frame('metalslug')">
+            <div class="Main">
+                <img src="rc/Metal Slug.png" alt="Greate icon hãn" id="ICON"> 
+                <h2>Metal Slug</h2>
+            </div>
+            <div class="INFO">
+                <h3>Metal Slug</h3>
+                <span> TRAINER - With functions that allow you to perform better in the game for better results </span>
+                <img src="rc/MetalSlug.gif" alt="background" id="Background" draggable="false">
+            </div>
+
+        
+        </div>
+
+
+        <div class="Box" id="monsterhunterrise" onclick="Open_Frame('monsterhunterrise')">
+            <div class="Main" >
+                <img src="rc/Monster Hunter Rise.png" alt="Greate icon hãn" id="ICON"> 
+                <h2>Monster Hunter Rise</h2>
+            </div>
+
+            <div class="INFO">
+                <h3>Monster Hunter Rise</h3>
+                <span>MOD - Go hunting without worrying about spirit bird buffers.</span>
+                <img src="rc/Monster Hunter Rise.gif" alt="background" id="Background" draggable="false">
+            </div>
+        </div>
+
+    <div class="Box" id="request">
+        <div class="Main">
+                <img src="rc/Request.svg" style="width: 40px ;" alt="Greate icon hãn" id="ICON"> 
+                <h2>REQUEST</h2>
+        </div>
+
+        <div class="INFO">
+            <h3>How request</h3>
+            <span>REQUEST- Still under construction but you can simply request if you have a github account</span>
+            <img src="rc/Request.gif" alt="background" id="Background" draggable="false">
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+<footer class="buttom">
+    <div class="Index_select">
+
+        <!--         
+            <div id="btn" class="BACK">
+                <span><</span>
+            </div>
+            <div id="btn" class="NUMBER1">
+                <span>1</span>
+            </div>
+            <div id="btn" class="NUMBER2">
+                <span>2</span>
+            </div>
+            <div id="btn" class="NUMBER3">
+                <span>3</span>
+            </div>
+            <div id="btn" class="AVANCED">
+                <span>></span>
+            </div>
+        </div>
+
+    -->
+    <div  id="loader_page">
+        <div id="close_page">
+            <span>X</span>
+        </div>
+        <iframe id="FRAME" src="pages/" onload="finishin_load()">
+
+        </iframe>
+    </div>
+
+    <script src=".\script/main.js"></script>
+
+</footer>
+</html>

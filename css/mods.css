@@ -1,0 +1,31 @@
+.MOD{
+    display: block;
+    margin: auto;
+    float: left;
+    padding-left: 35%;
+    padding-top: 10%;
+    align-items: center;
+}
+
+
+.MOD .FunctionExplain{
+    position: absolute;
+    height: 15px; 
+    width: 150px; 
+    background-color: rgba(0, 0, 0, 0.014);
+}
+
+.MOD .FunctionExplain #ExplainText{
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    margin: 4%;
+}
+
+.MOD .FunctionExplain #ExplainText h3{
+    user-select: none;
+}
+
+.MOD  #photoMOD{
+    user-select: none;
+}
+

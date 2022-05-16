@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main_style.css">   
+    <link rel="stylesheet" href="../../css/mods.css"> 
+    <script src="../../script/main.js"></script>
+    <title>bayonetta</title>
+</head>
+<body>
+    
+    <img id="backgroundGame" src="./rc/background.gif" alt="GameBackground" style="z-index: -1; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 10%; width: 100%; height: 100%; ">
+
+    <div class="MOD">
+        <h1 style="text-align: center ;">BAYONETTA</h1>
+        <h2>Game version: STEAM</h2>
+        <h2>BuildID(version ID): 1824749</h2>
+        
+        <div style="position:fixed;">
+            <img id="photoMOD" src="rc\trainer.png" alt="trainer" draggable="false"> 
+
+            <div class="FunctionExplain" style="left: 30px; top:80px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Dont Take Demage</h3>
+                    <span>Bayonetta Não recebe nenhum dano dos inimigos ou ameaças</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 30px; top:103px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>God Mode</h3>
+                    <span>Bayonetta Se torna INTOCAVEL pelo seus inimigos uma bruxa deveras deusa</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 30px; top:125px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Hit kill</h3>
+                    <span>Mate seus inimigos sem dificuldade ou melhor com um unico ataque façam eles sucubirem</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 30px; top:149px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Inf Jump</h3>
+                    <span>Pule infinitamente e alcance o céu, oque definivamente a bruxa não pode fazer naturalmente</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 30px; top:171px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Max Power Witcher</h3>
+                    <span>Toda e qualquer ganho de energia recarregar ao MAXIMO do seu poder</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 30px; top:194px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Angel Attack</h3>
+                    <span>Toda a munição do mini-game infinita então desative quando cansar</span>
+                </div>
+            </div>
+
+
+            <div class="FunctionExplain" style="left: 231px; top:100px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none; width: 200px;">
+                    <h3>Witch TIMER!</h3>
+                    <span>Hora da BRUXA! sim, você pode colocar e usar a incrivil habilidade quanto e quando quiser</span>
+                </div>
+            </div>
+
+
+            <div class="FunctionExplain" style="left: 241px; top:135px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none; width: 200px;">
+                    <h3>Witch Power</h3>
+                    <span>Coloque a quantidade de poder que você quiser</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" style="left: 266px; top:175px;"  onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none; width: 200px;">
+                    <h3>Haloy</h3>
+                    <span>É um cartão sem limites para você! gaste com o que quiser e quando quiser, basta informa quanto você quer</span>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class = "BTN_BOTTOM">
+        <button class="BTN" id="SUPPORTME" > SUPPORT-ME HERE </button>
+        <button class="BTN" id="DOWNLOAD" > DONWLOAD HERE </button>
+        <button class="BTN" id="REQUEST" > REQUEST HERE </button>
+    </div>
+
+
+</body>
+
+<footer>
+
+    <script>
+            trainer_img = document.getElementById('photoMOD');
+            trainer_img.addEventListener("click", function(e){
+                console.log(e.offsetX + "  " + e.offsetY );
+            });
+
+    </script>
+
+
+
+</footer>
+</html>

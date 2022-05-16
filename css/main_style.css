@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+
+}
+
+:root{
+    --bayonetta: linear-gradient(#7100ff, rgb(86, 5, 161));
+    --metalslug: linear-gradient(rgb(122, 0, 0), rgb(184, 119, 0));
+    --monsterhunterrise: linear-gradient(rgb(53, 0, 197), rgb(0, 151, 197), rgb(0, 12, 80));
+    
+
+    --request:  linear-gradient(red, black);
+
+    --download: rgb(0, 211, 0);
+    --suportme: rgb(255, 72, 0);
+}
+
+
+.Home{
+    background-color: rgb(56, 56, 56);
+    padding: 1vh;
+    display: flex;
+    position: relative;
+}
+
+.Home #links{
+    margin: auto;
+    margin-right: 10px;
+}
+
+.Home #links a{
+    text-align: center;
+    text-decoration-line: none;
+    transition: 500ms;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Home #links a:hover{
+    box-shadow: 0px 0px 10px 5px #7100ff;
+    transition: 500ms;
+}
+
+
+
+.Page {
+    padding: 0%;
+    display: block;
+}
+
+.Page .Box{
+    position: relative;
+    float: left;
+    margin: 2.0%;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 800px;
+    max-height: 800px;
+    height: 300px;
+    width: 300px;
+
+    background-color: black;
+    border-radius: 5%;
+
+    cursor:pointer;
+}
+
+.Page .Box .Main{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    /*border: 1px solid rgb(170, 16, 16);*/
+ 
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+}
+
+.Page .Box .Main #ICON{
+    user-select: none;
+    width: 80px;
+    height: 80px;
+    padding: calc(50% - 50px);
+    padding-top: calc(50% - 80px);;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+
+.Page .Box:hover .Main #ICON{
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+}
+
+
+.Page .Box .Main h2{
+    /*color: black;*/
+    opacity: 100%;
+}
+
+.Page .Box .INFO{
+    transition: 100ms;
+    opacity: 0%;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+}
+
+.Page .Box .INFO #Background{
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    border-radius: 5%;
+    transition: 1s;
+}
+
+.Page .Box:hover .INFO #Background{
+    opacity: 30%;
+    transition: 1s;
+
+}
+
+.Page .Box .INFO h3{
+
+    transition: 100ms;
+    display: none;
+}
+
+.Page .Box:hover .INFO h3{
+
+    transition: 100ms;
+    display: block;
+}
+
+.Page .Box .INFO span{
+    transition: 1s;
+    opacity: 0%;
+}
+
+.Page .Box:hover .INFO span{
+    transition: 1s;
+    opacity: 100%;
+}
+
+.Page .Box:hover .INFO{
+    width: 100%;
+    height: 100%;
+    fill-opacity: 30% ; 
+    display: block;
+    visibility: visible;
+    opacity: 100%;
+    text-align: center;
+    transition: 1s;
+    padding: 0;
+    margin: 0;
+}
+
+.Page .Box:hover .Main{
+    box-shadow: 0px 0px 25px 10px rgb(233, 20, 20);
+    width: 51px;
+    height: 51px;
+    /*background-image: linear-gradient(rgb(177, 0, 0), rgb(197, 72, 0)); */
+}
+
+
+
+.Page .Box:hover .Main h2{
+    transition: 1s;
+    opacity: 0%; 
+    width: 100%;
+    height: 100%; 
+}
+
+
+.buttom{
+    display: block;
+    padding-left: 40%;
+    position: relative;
+
+}
+
+.buttom .Index_select #btn{
+    text-align: center;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+.buttom .Index_select #btn:hover{
+    box-shadow: 0px 0px 10px 2px rgb(255, 81, 0);
+    background-image: linear-gradient(red, rgb(255, 94, 0));
+}
+.buttom .Index_select #btn span{
+    margin-top: 30%; 
+    user-select: none;
+    display: block; 
+    color: black;
+}
+
+
+.buttom .Index_select #btn:hover span{
+    color:rgb(255, 255, 255);
+    stroke: blue 1px;
+}
+
+#loader_page{
+    position: fixed; 
+    display: none; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.493); 
+
+}
+
+#loader_page #close_page{
+    float:right;
+    margin: 1%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+#loader_page #close_page span{
+    font-size: 25px;
+    text-align: center;
+    margin: 25%;
+    user-select: none;
+}
+
+
+#loader_page #FRAME{
+    opacity: 100%;
+    background-color:rgb(17, 11, 11); 
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 85%;
+    height: 85%;
+    user-select: none;
+}
+
+
+
+.BTN_BOTTOM{
+    position:    fixed;
+    display:     block;
+    min-width:   250px;
+    bottom:      3%;
+    padding:     5%;
+    left:        calc(45% - 240px);
+}
+
+.BTN {
+    color: aliceblue;
+    width: 160px;
+    height: 30px;
+    background-color: rgba(137, 43, 226, 0.137);
+    transition: 500ms;
+}
+
+.BTN:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+#SUPPORTME:hover{
+    box-shadow: 0px 0px 10px 5px var(--suportme);
+}
+
+#DOWNLOAD:hover{
+    box-shadow: 0px 0px 10px 5px var(--download);
+}
+
+#REQUEST:hover{
+    box-shadow: 0px 0px 10px 5px blueviolet;
+}
+

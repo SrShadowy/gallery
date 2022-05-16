@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_style.css">
+    <title>ABOUT</title>
+   
+</head>
+<body style="background-repeat: no-repeat; background-size:cover;">
+
+    <div style="z-index: 0; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 70%; width: 100%; height: 100%;">
+        <img id="backgroundGame" src="" alt="GameBackground" style="display: none ;">
+    </div>
+    <script>
+        const wp = ["wallpaper(1).jpg","wallpaper(1).png", "wallpaper(2).jpg", "wallpaper(2).png","wallpaper(3).jpg", "wallpaper(4).jpg",
+         "wallpaper(5).jpg", "wallpaper(6).jpg", "wallpaper(7).jpg", "wallpaper(8).jpg", "wallpaper(9).jpg", "wallpaper(10).jpg",
+        "wallpaper(11).jpg", "wallpaper(12).jpg","wallpaper(13).jpg", "wallpaper(14).jpg",'wallpaper(15).jpg' ] 
+        let random_value = 1 + Math.floor(Math.random() * 16);
+        console.log("wallpaper(" + random_value + ")")
+        document.body.style.backgroundImage = "url('rc/background/" + wp[random_value] + "";
+    </script>
+
+<div class="Home">
+    <h3>Shadowy galery mod</h3>
+
+    <div id="links">
+        <a href="index.html"> HOME </a>
+        <!--<a href="#"> LIST </a> -->
+        <a href="about.html"> ABOUT </a>
+    </div>
+</div>
+
+<style>
+    p{
+        padding: 5% 30% 5% 30%; font-size: 130% ;margin: 20px; background-color: rgba(0, 0, 0, 0.432);
+    }
+
+    .Page h1{
+        padding-top: 2%;
+    }
+
+
+    .Page a{
+        color: aqua;
+        user-select: none;
+        cursor: pointer;
+    }
+
+</style>
+
+<div class="Page" style="position: relative; text-align: center;">
+    <h1>Welcome to about!</h1>
+
+
+
+    <p>Be welcome.<br>
+
+        My nickname is Shadowy, MrShadowy, I hope you are well.<br>
+        
+        Before I start I believe you came after answers so here can help you:<br>
+        <a href="/tutorial/dowload_tutorial.html">*how downloads work*</a><br>
+        <a href="/tutorial/request_game_tutorial.html">*how to make your requests for me to do*</a><br>
+        <a href="/tutorial/request_game_rules.html">*Game requirements for requisition*.</a><br>
+        <a href="/tutorial/support_me.html">*how can you help me*</a><br>
+        
+        Well, no need for prey, I wrote everything manually and lovingly, with quick texts to read.
+        I am a programmer passionate about games as you can see, I love RPG and Hack'n'Slash and you? Of course, those are my preferences, you have yours, I like almost all kinds of games.
+        
+        And thanks to that I became a programmer.
+        Cheats, mods and Trainers are a way to do this and as I am passionate about it well and so I do.
+        
+        This is a completely free project and you can request one for a game you want.
+        
+        <BR>If I have the game, or conditions to acquire it and of course it is within the <a href="about.html">*requisition rules*</a> I will gladly do it.
+        
+        <BR>You can see more about me right here on github: <a href="https://github.com/SrShadowy">https://github.com/SrShadowy</a></p>
+</div>
+
+
+</body>
+<footer>
+    <script src=".\script/main.js"></script>
+
+</footer>
+</html>
