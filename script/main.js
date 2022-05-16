@@ -1,6 +1,6 @@
 function Open_Frame(page){
     let ld = document.getElementById("FRAME");
-    ld.src = "../pages/" + page;
+    ld.src = "pages/" + page;
     document.getElementById("loader_page").style.display = "block";
 }
 
