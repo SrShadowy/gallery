@@ -9,7 +9,7 @@
     <script src="../../script/main.js"></script>
     <title>bayonetta</title>
 </head>
-<body>
+<body style="background-color: black ;">
     
     <img id="backgroundGame" src="./rc/background.gif" alt="GameBackground" style="z-index: -1; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 10%; width: 100%; height: 100%; ">
 
@@ -88,13 +88,23 @@
 
         </div>
 
-        
-
     </div>
 
     <div class = "BTN_BOTTOM">
+
+        <div id="Serve_download" style="display: none; align-items: center; padding: 5%; ">
+            <label for="buttom"> SERVES: </label>
+            <button style="color:aliceblue; background-color: rgb(38, 0, 255); border: 5px solid black;" onclick="new_tab('https://www.mediafire.com/file/q43ywhfjp6cj51n/TRAINER_Bayonetta.zip/file')">
+                MediaFire
+            </button>
+
+            <button style="color:aliceblue; background-color: red;" onclick="new_tab('https://mega.nz/file/qlV2mZrD#H3t10YYefshzqVoV5EzJcapJoZwwCw_kb4gkKlR2Tt4');">
+                MEGA
+            </button>
+        </div>
+
         <button class="BTN" id="SUPPORTME" > SUPPORT-ME HERE </button>
-        <button class="BTN" id="DOWNLOAD" > DONWLOAD HERE </button>
+        <button class="BTN" id="DOWNLOAD" onclick="show_servers()" > DONWLOAD HERE </button>
         <button class="BTN" id="REQUEST" > REQUEST HERE </button>
     </div>
 

@@ -14,6 +14,15 @@ function set_gride_color_hover(color, i)
 
 }
 
+function show_servers(){
+    document.getElementById('Serve_download').style.display = 'block'; 
+}
+
+function new_tab(link){
+    window.open(link, '_blank')
+}
+
+
 function checkVisible(elm) {
     let rect = elm.getBoundingClientRect();
     let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
