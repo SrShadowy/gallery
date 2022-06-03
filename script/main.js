@@ -103,7 +103,16 @@ function dragElement(elmnt) {
 
 
 
+
 function main(){
+
+
+    loading = document.getElementById("loading");
+    if (loading != null){
+        loading.style.display = "none";
+    }
+
+   
 
     let btn_close = document.getElementById("close_page");
     if (btn_close != undefined){
