@@ -9,6 +9,11 @@
     <script src="../../script/main.js"></script>
     <title>GAME NAME</title>
 </head>
+
+<div id="loading" style="display: block; background-color: rgba(0, 0, 0, 0.651); position: fixed; width:100%;height:100%; justify-content: center; justify-items: center;  z-index: 99;">
+    <img src="./../../rc/loading.gif" style="display: flex; justify-content: center; align-items: center; position: relative; margin: 10% auto 20px auto;"/>
+</div>
+
 <body>
     
     <img id="backgroundGame" src="./rc/background.gif" alt="GameBackground" style="z-index: -1; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 10%; width: 100%; height: 100%; ">
@@ -18,7 +23,7 @@
         <h2>Game version: PLATAFORM</h2>
         <h2>GAME BUILD VERSION</h2>
         
-        <div style="position:fixed;">
+        <div class="ajusting">
             <img id="photoMOD" src="rc\trainer.png" alt="trainer" draggable="false"> 
 
 
@@ -28,6 +33,15 @@
                     <span>DESCRIPTION</span>
                 </div>
             </div>
+
+
+            <div id="DEV_MOD" style="display: none ;" >
+                <div id="RETAN" onclick="create_retan()">
+
+                </div>
+            </div>
+   
+            
         </div>
 
         
