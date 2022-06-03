@@ -1,10 +1,19 @@
 .MOD{
     display: block;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    /*
     float: left;
     padding-left: 35%;
-    padding-top: 10%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    */
+
 }
 
 
@@ -12,7 +21,7 @@
     position: absolute;
     height: 15px; 
     width: 150px; 
-    background-color: rgba(0, 0, 0, 0.014);
+    /*background-color: rgba(0, 0, 0, 0.002);*/
 }
 
 .MOD .FunctionExplain #ExplainText{
@@ -25,8 +34,41 @@
     user-select: none;
 }
 
+.MOD .ajusting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px auto 20px auto;
+    
+}
+
+
 .MOD  #photoMOD{
     user-select: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#DEV_MOD{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100px;
+}
+
+#DEV_MOD #RETAN{
+    width: 50px;
+    height: 20px;
+    background-color: blue;
 
 }
 
+
+#DEV_MOD .generic_retans{
+
+    background-color: red;
+    overflow:visible;
+    position: absolute;
+}
