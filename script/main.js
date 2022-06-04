@@ -160,6 +160,7 @@ function explains_locations(){
         //console.log(div_);
         x = div_.getAttribute("metadataX");
         if (x == null) continue;
+        
         y = div_.getAttribute("metadataY");
         h = div_.getAttribute("metadatah");
         w = div_.getAttribute("metadataW");
