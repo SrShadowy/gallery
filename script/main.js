@@ -159,6 +159,7 @@ function explains_locations(){
         div_ =  document.getElementsByClassName("FunctionExplain")[i];
         //console.log(div_);
         x = div_.getAttribute("metadataX");
+        if (x == null) continue;
         y = div_.getAttribute("metadataY");
         h = div_.getAttribute("metadatah");
         w = div_.getAttribute("metadataW");
@@ -183,7 +184,7 @@ window.onresize = explains_locations;
 function getPerctualImage(positionX, positionY, h,w){
 
     img_ = getImageLocationOnScreen();
-    
+    if (img_ == null) return;
 
     result_x = positionX * img_[0].width / 100;
     result_x += img_[0].x;
@@ -202,6 +203,7 @@ function getPerctualImage(positionX, positionY, h,w){
 
 function getImageLocationOnScreen(){
     let img = document.getElementById("photoMOD");
+    if(img != null)
     return img.getClientRects();
 }
 
@@ -232,6 +234,10 @@ function show_percentual_img(e){
 
 function showMe(me){
     img_ = getImageLocationOnScreen();
+
+    if ( img_ == null) return;
+
+    
     positionX = me.style.left.replace('px', '');
     positionY = me.style.top.replace('px', '');
     height = me.style.height.replace('px', '');
