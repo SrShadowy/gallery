@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main_style.css">   
+    <link rel="stylesheet" href="../../css/mods.css"> 
+    <script src="../../script/main.js"></script>
+    <title>METAL SLUG Trainer</title>
+</head>
+
+
+
+<div id="loading" style="display: block; background-color: rgba(0, 0, 0, 0.651); position: fixed; width:100%;height:100%; justify-content: center; justify-items: center;  z-index: 99;">
+    <img src="./../../rc/loading.gif" style="display: flex; justify-content: center; align-items: center; position: relative; margin: 10% auto 20px auto;"/>
+</div>
+
+
+
+<body style="background-color:rgb(0, 0, 0) ;">
+    
+    <img id="backgroundGame" src="./rc/background.gif" alt="GameBackground" style="z-index: -1; position: fixed ; left: 0px; top: 0px; background-color: rgb(39, 39, 39); opacity: 10%; width: 100%; height: 100%; ">
+
+    <div class="MOD">
+        <h1 style="text-align: center ;">Lord Of Shadows 2</h1>
+        <h2>Game version: 1.2 - Steam</h2>
+        <h2>-----------------</h2>
+        
+        <div class="ajusting">
+            <img id="photoMOD" src="rc/trainer.png" alt="trainer" draggable="false"> 
+
+
+            <div class="FunctionExplain" metadataX = "18.4" metadataY="55.6" metadataH= "2.9" metadataW= "70.6"
+              onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>God Mode</h3>
+                    <span>Become invulnerable</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" metadataX = "17.9" metadataY="62.3" metadataH= "2.9" metadataW= "30.6"
+             onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Inf HP</h3>
+                    <span>Take demage but no demage</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" metadataX = "18.4" metadataY="74.1" metadataH= "2.9" metadataW= "20.6"
+              onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Void</h3>
+                    <span>Sword of void is powerful and full</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" metadataX = "18.2" metadataY="78.3" metadataH= "2.9" metadataW= "30.6"
+              onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Chaos</h3>
+                    <span>Box or just beating? you decide why it's always full to break the defenses</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" metadataX = "19.2" metadataY="82.9" metadataH= "2.9" metadataW= "40.6"
+              onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Focus</h3>
+                    <span>(active in battle) keep Focus on max</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" metadataX = "49.8" metadataY="78.7" metadataH= "2.9" metadataW= "30"
+              onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+                <div id="ExplainText" style="display: none;">
+                    <h3>Bat Fog</h3>
+                    <span>turn into the bat fog whenever you want for as long as you want</span>
+                </div>
+            </div>
+
+            <div class="FunctionExplain" metadataX = "50.4" metadataY="73.5" metadataH= "2.9" metadataW= "30"
+            onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+              <div id="ExplainText" style="display: none;">
+                <h3>Itens</h3>
+                <span>make your items unfinished</span>
+       
+              </div>
+          </div>
+          <div class="FunctionExplain" metadataX = "44.3" metadataY="61.9" metadataH= "2.9" metadataW= "37.7"
+          onmouseenter="seeExplain(this)" onmouseleave="unseeExplain(this)" >
+            <div id="ExplainText" style="display: none;">
+              <h3>Speed</h3>
+              <span>Incresent your speed</span>
+     
+            </div>
+        </div>
+
+ 
+
+            <div id="DEV_MOD" style="display:none;" >
+                <div id="RETAN" onclick="create_retan()">
+    
+                </div>
+            </div>
+
+        </div>
+
+        <div >
+
+
+            <div id="Serve_download" style="display: none; align-items: center; padding: 10%; ">
+                <label for="buttom"> SERVES: </label>
+                <button style="color:aliceblue; background-color: rgb(38, 0, 255); border: 5px solid black;" onclick="new_tab('https://www.mediafire.com/file/m3qb34cnym0t1wc/CLOS2Trainer.zip/file')">
+                    MediaFire
+                </button>
+    
+                <button style="color:aliceblue; background-color: red;" onclick="new_tab('https://mega.nz/file/X5UBzZaJ#3fNVrCH7rYeahNBlPl1ABi5KC5E7sRmnYb-VD-2_-jo');">
+                    MEGA
+                </button>
+            </div>
+    
+            <button class="BTN" id="SUPPORTME" onclick="new_tab('https://www.patreon.com/srshadowy')" > SUPPORT-ME HERE </button>
+            <button class="BTN" id="DOWNLOAD"  onclick="show_servers()" > DONWLOAD HERE </button>
+            <button class="BTN" id="REQUEST" onclick="new_tab('https://github.com/SrShadowy/gallery/issues')"> REQUEST HERE </button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<footer>
+
+    <script>
+            trainer_img = document.getElementById('photoMOD');
+            trainer_img.addEventListener("click", function(e){
+                console.log(e.offsetX + "  " + e.offsetY );
+            });
+
+    </script>
+
+
+
+</footer>
+</html>
