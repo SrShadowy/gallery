@@ -260,6 +260,7 @@
     bottom:      3%;
     padding:     5%;
     left:        calc(45% - 240px);
+    padding-top: 0%;
 }
 
 .BTN {
