@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main_style.css">
+    <link rel="icon" type="image/x-icon" href="rc/favico.ico">
     <title>Main Menu</title>
    
 </head>
@@ -204,7 +205,21 @@
 
 
 
+
     <script src=".\script/main.js"></script>
+    <script>
+        function getImageDirectoryByFullURL(url){
+            str =  url.substr(url.lastIndexOf("/")+1);
+            return str.split('#')[1];
+        }
+
+        url_var = getImageDirectoryByFullURL(window.location.href);
+        if (url_var != undefined){
+            Open_Frame(url_var);
+        }
+
+
+    </script>
 
 </footer>
 </html>
